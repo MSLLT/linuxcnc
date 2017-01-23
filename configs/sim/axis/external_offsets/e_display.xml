@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Example display of external offsets
+-->
+<pyvcp>
+  <vbox>
+    <label>
+      <text>"EOffsets"</text>
+      <font>"bold"</font>
+    </label>
+
+  <vbox>
+    <relief>"sunken"</relief>
+    <bd>3</bd>
+    <hbox>
+      <label>
+        <text>"X:"</text>
+        <anchor>"w"</anchor>
+      </label>
+      <number>
+        <halpin>"x-offset-f"</halpin>
+        <format>"+10.4f"</format>
+        <bg>"black"</bg>
+        <fg>"orange"</fg>
+        <font>"bold"</font>
+      </number>
+    </hbox>
+    <hbox>
+      <label>
+        <text>"Y:"</text>
+        <anchor>"w"</anchor>
+      </label>
+      <number>
+        <halpin>"y-offset-f"</halpin>
+        <format>"+10.4f"</format>
+        <bg>"black"</bg>
+        <fg>"orange"</fg>
+        <font>"bold"</font>
+      </number>
+    </hbox>
+    <hbox>
+      <label>
+        <text>"Z:"</text>
+        <anchor>"w"</anchor>
+      </label>
+      <number>
+        <halpin>"z-offset-f"</halpin>
+        <format>"+10.4f"</format>
+        <bg>"black"</bg>
+        <fg>"orange"</fg>
+        <font>"bold"</font>
+      </number>
+    </hbox>
+
+    <hbox>
+      <label>
+        <text>"Trespass:"</text>
+        <anchor>"w"</anchor>
+      </label>
+      <led>
+          <halpin>"trespass"</halpin>
+          <size>20</size>
+          <on_color>"red"</on_color>
+          <off_color>"green"</off_color>
+      </led>
+    </hbox>
+
+  </vbox>
+
+  </vbox>
+</pyvcp>

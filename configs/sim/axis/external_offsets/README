@@ -1,0 +1,29 @@
+Demonstrate external offsets:
+
+e_axis.ini         -- simple identity kins
+e_axis_shutoff.ini -- shutoff for limit trespass
+
+Usage:
+  1) Estop OFF  (F1)
+  2) Machine ON (F2)
+  3) HOME All   (Ctrl-Home)
+  4) Test external offset functionality using the
+     sim_pin gui to alter the per-axis hal pins:
+       axis.*.eoffset-enable
+       axis.*.eoffset-scale
+       axis.*.eoffset-counts
+  5) For the e_axis_shutoff.ini example, automatic
+     shutoff is controlled by the enable_shutoff
+     signal (also provided with sim_pin) 
+
+Notes:
+  The ini file setting [AXIS_*]OFFSET_AV_RATIO=value
+  controls external offsets velocity, acceleration
+
+  Allowed values:
+    0.0 <= OFFSET_AV_RATIO <= 0.9
+
+  A value of 0 disables external offsets.
+
+For more information, see documentation chapter for
+External-offsets

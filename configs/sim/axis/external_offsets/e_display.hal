@@ -1,0 +1,5 @@
+net ex  axis.x.eoffset  pyvcp.x-offset-f
+net ey  axis.y.eoffset  pyvcp.y-offset-f
+net ez  axis.z.eoffset  pyvcp.z-offset-f
+
+net trespass            pyvcp.trespass
